@@ -26,7 +26,8 @@ class ExtendedNumericField extends ExtendedTextField {
 	}
 	
 	function includeJavascript() {
-		Requirements::javascript('extendedfields/javascript/ExtendedNumericField.js');
+	//	Requirements::javascript('extendedfields/javascript/ExtendedNumericField.js');
+		Requirements::javascript('extendedfields/javascript/extendedFields.js');
 	}
 	
 	function includeCSS() {

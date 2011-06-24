@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	jQuery('.ExtendedNumericField').keyup(function () {
+	jQuery('.ExtendedNumericField').live('keyup', function () {
 		var oldValue = this.value;
 		this.value = this.value.replace(/[^0-9\.]/g,'');
 		if (this.value != oldValue) {
