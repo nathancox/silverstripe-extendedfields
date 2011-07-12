@@ -41,6 +41,10 @@ $(document).ready(function() {
 					$textField.hide();
 					$textField.insertAfter(this);
 					
+					$textField.live('keyup', function() {
+						$passwordField.val($(this).val());
+					});
+					
 					if (buttonTag == 'checkbox') {
 						var $buttonField = $('<input />');
 						$buttonField.attr({
