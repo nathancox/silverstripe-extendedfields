@@ -31,12 +31,12 @@ $(document).ready(function() {
 					var $textField = $('<input />');
 					$textField.attr({
 						'type': 'text',
-						'class': this.getAttribute('class'),
-						'style': this.getAttribute('style'),
-						'size':	this.getAttribute('size'),
-						'name':	this.getAttribute('name')+'-text',
-						'id':	this.getAttribute('id')+'-text',
-						'tabindex':	this.getAttribute('tabindex')
+						'class': $passwordField.attr('class'),
+						'style': $passwordField.attr('style'),
+						'size':	$passwordField.attr('size'),
+						'name':	$passwordField.attr('name')+'-text',
+						'id':	$passwordField.attr('id')+'-text',
+						'tabindex':	$passwordField.attr('tabindex')
 					});
 					$textField.hide();
 					$textField.insertAfter(this);
